@@ -48,7 +48,7 @@ export class ApiRiotComponenteService {
       }
     )*/
     console.log("llego");
-    return this.http.get('http://soloqchallengeproject.herokuapp.com/jugadores');
+    return this.http.get('https://soloqchallengeproject.herokuapp.com/jugadores');
 
      
       
