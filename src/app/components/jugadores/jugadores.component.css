@@ -1,0 +1,19 @@
+.jugadores {
+    margin-top: 100px;
+}
+.fuego{
+    src:url("./fuego.jpg");
+}
+
+a:hover.sobre{
+    color:#fff;
+    background-color: blue;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid green;
+    font-family:impact;
+  }
+  a{
+    color:#6441a5;
+    text-decoration:none;
+  }

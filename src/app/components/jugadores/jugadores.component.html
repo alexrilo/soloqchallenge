@@ -1,0 +1,35 @@
+<div class="jugadores">
+<div class="container">
+<table class=" table table table-dark table-striped table-bordered row-border hover" id="tablaSummoners">
+    <thead>
+      <tr>
+        <th>Posicion</th>
+        <th>Durísimo</th>
+        <th>Nombre invocador</th>
+        <th>Liga</th>
+        <th>Partidas jugadas</th>
+        <th>Victorias</th>
+        <th>Derrotas</th>
+        <th>Win rate</th>      
+        <th>stats</th>  
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jugador of jugadores; let indice=index">
+        <td>{{indice+1}}</td>        
+        <td>{{jugador.nombreReal}}</td>
+        <td>{{ jugador.nombre }}  </td>
+        <td >{{ jugador.liga + " (" + jugador.lps + " LPs)"  }} <img src= "https://images.emojiterra.com/google/android-11/512px/1f525.png" height="25px" width="25px" *ngIf="jugador.racha"> </td>
+        <td>{{jugador.wins+jugador.loses}}</td>
+        <td>{{ jugador.wins }}</td>
+        <td>{{ jugador.loses }}</td>
+        <td>{{ jugador.wr + "%"}}</td>
+        <td><a href={{jugador.url}}><b>OP.GG</b></a></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

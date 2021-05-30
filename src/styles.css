@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-image: url("img/malphite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    background-image: url("img/malphite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
